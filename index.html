@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" class="css">
+    <link rel="shortcut icon" href="img/pt_logo.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/8e32604c34.js" crossorigin="anonymous"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+    <!-- This style is for the show more and show less feature in the skills section. -->
+    <!-- <style>
+    .languages .info:nth-child(n+4) {
+        display: none;
+    }
+
+    .languages.show-all .info {
+        display: block;
+    }
+</style> -->
+    <script src="/js/script.js"></script>
+    <title>Pranav Titambe</title>
+</head>
+
+<body>
+
+    <nav class="h">
+        <div class="header">
+            <span class="left">
+                <i onclick="toggleHide()" id="menu-bar" class="fa-solid fa-bars"></i>
+                
+                <img src="/img/pt_logo.jpg" alt="">
+                <!-- <p id="name"> Pranav Titambe</p> -->
+            </span>
+            <div class="mid" id="mid">
+                <ul class="navbars" >
+                    <li>
+                        <!-- <span class="material-symbols-outlined">home</span> -->
+                        <a href="#" id="home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#skills">About</a>
+                    </li>
+                    <li>
+                        <a href="#project-heading" id="project">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contactme" id="contactus">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="right">
+                <span class="login">
+                    <button id="login" onclick="redirect()">Login</button>
+                </span>
+                <span class="signup" id="signup">
+                    <button id="signup" onclick="redirect1()">Sign Up</button>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <!-- body of portfolio -->
+    <section class="main">
+        <div class="background">
+
+            <h1 class="name">
+                Hi, I am <span id="color-name">Pranav Titambe</span>.
+            </h1>
+            <div id="typerwriter-animation">
+                I am <span id="typewriter"></span>
+            </div>
+            <!-- <div class="intro-roles">
+                <div id="static">I am</div>
+                <ul class="list">
+                    <li id="role">Web Developer</li>
+                    <li id="role">Graphic Designer</li>
+                    <li id="role">Java Developer</li>
+                </ul>
+            </div> -->
+            <!-- <span id="element">I am</span> -->
+            <p id="about">
+                I'm a second year engineering undergrad student studying in Vivekanand Education Society's Institute of
+                Technology(VESIT) under IT branch. I am very passionate about learning Artificial Intelligence and
+                Machine Learning stuffs. My current goal is to ace full stack Web Development followed by React JS,
+                Express JS and Tailwind CSS.
+            </p>
+        </div>
+        <div id="skills">
+            <p class="knowledge">
+                I am skilled at..
+            </p>
+            <div class="languages">
+                <div class="info">
+                    <div class="skill-title">
+                        <div class="logo">
+                            <img src="/img/926px-C_Programming_Language.svg.png" alt="" class="skill-icon">
+                        </div>
+                        <h3>C</h3>
+                    </div>
+                    <p>I am strong at C programming, since I have completed practing DSA concepts in C. Moreover, I am efficent in solving problems in C and I have 2 stars in problem solving in C on competitive platform like HackerRank.</p>
+                </div>
+                <div class="info">
+                    <div class="skill-title">
+                        <div class="logo">
+                            <img src="img/c++_language.png" alt="" class="skill-icon">
+                        </div>
+                        <h3>C++</h3>
+                    </div>
+                    <p>After C, I started learning C++ and it's core concepts including OOPs. </p>
+                </div>
+                <div class="info">
+                    <div class="skill-title">
+                        <div class="logo">
+                            <img src="img/java.png" alt="" class="skill-icon">
+                        </div>
+                        <h3>JAVA</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam.</p>
+                </div>
+                <div class="info">
+                    <div class="skill-title">
+                        <div class="logo">
+                            <img src="./img/html.png" alt="" class="skill-icon">
+                        </div>
+                        <h3>HTML</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam.</p>
+                </div>
+                <div class="info">
+                    <div class="skill-title">
+                        <div class="logo">
+                            <img src="img/css_1.png" alt="" class="skill-icon">
+                        </div>
+                        <h3>CSS</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam.</p>
+                </div>
+                <div class="info">
+                    <div class="skill-title">
+                        <div class="logo">
+                            <img src="img/png-javascript-badge-picture-8.png" alt="" class="skill-icon">
+                        </div>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, magnam.</p>
+                </div>
+                <!-- <button id="show-more-skills-btn" onclick="toggleSkills()">Show More</button> -->
+            </div>
+        </div>
+        <div class="container2">
+            <div class="innercontainer">
+                <h1 id="project-heading">My Projects</h1>
+                <h3 id="instruction">Please hover on the images to know more</h3>
+                <div id="projects">
+                    <div id="project-details">
+                        <div id="project-img">
+                            <img src="img/apms.jpg" alt="">
+                            <div class="layer">
+                                <h2 id="project-title">Academic Project Management Systems
+                                </h2>
+                                <p>This was my first academic project where me and my team made a full stack desktop application using JAVA and backend using MySQL</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project-details">
+                        <div id="project-img">
+                            <img src="img/portfolio_website.jpg" alt="">
+                            <div class="layer">
+                                <h2 id="project-title">
+                                    Personal Portfolio
+                                </h2>
+                                <p>This is my personal portfolio made using HTML, CSS and JavaScript. </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="project-details">
+                        <div id="project-img">
+                            <!-- img file will be here -->
+                            <div class="layer">
+                                <h2 id="project-title">
+                                    Lorem ipsum dolor sit
+                                </h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptates dolores
+                                    quo, unde earum consequuntur minima quaerat architecto.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <button type="button" id="project-btn">See More</button> -->
+            </div>
+        </div>
+    </section>
+    <div class="container3">
+        <div id="contactme">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <p ><i id="contact-icons" class="fa-solid fa-paper-plane fa-bounce"></i> pranavtitambe04@gmail.com</p>
+                <p ><i  id="contact-icons" class="fa-solid fa-phone fa-shake"></i>+918928877911</p>
+                <p>Also you can connect me through</p>
+                <span id="contact-icons">
+                    <a href="https://www.instagram.com/pranav_p_titambe/" class="instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Pranavlovescode" class="github">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/pranav-titambe-6b34222a0/" class="linkedin">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/pranav_titambe8" class="twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                </span>
+            </div>
+            <div class="contact-right">
+                <form action="" class="get-info-form" name="submit-to-google-sheet">
+                    <!-- <label for="">Name</label> -->
+                    <input type="text" placeholder="Your Name" name="Name">
+                    <!-- <label for="">Email ID</label> -->
+                    <input type="text" placeholder="Your Email ID" name="Email ID">
+                    <!-- <label for="">Any Queries</label> -->
+                    <textarea name="Message" type ="text" id="form-message" cols="10" rows="5" placeholder="Your Message"></textarea>
+                    <button type="submit" id="btn1">Submit</button>
+                    <span id="success-msg"></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="copyright-section">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Made with <i class="fa-solid fa-heart fa-beat"
+                    id="heart"></i> by Pranav Titambe</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzQwRMgEOWAzepG2glV5NMR7eGGxXa7HTPv1Y3mRQ1UZlsg5_hM0o4cpRBYTiDhZ6ZMvg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('success-msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully!!!"
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+    </script>
+    <!-- This script is for the show more and show less feature for the skills section. -->
+   <!-- <script>
+    function toggleSkills() {
+        var skillsContainer = document.querySelector('.languages');
+        var showMoreSkillsBtn = document.getElementById('show-more-skills-btn');
+
+        if (skillsContainer.classList.contains('show-all')) {
+            skillsContainer.classList.remove('show-all');
+            showMoreSkillsBtn.textContent = 'Show More';
+        } else {
+            skillsContainer.classList.add('show-all');
+            showMoreSkillsBtn.textContent = 'Show Less';
+        }
+    }
+</script> -->
+    
+    
+</body>
+
+</html>

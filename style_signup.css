@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+
+    background-color: rgb(252, 223, 185);
+}
+.container{
+    flex-direction: column;
+    display: flex;    
+    justify-content: center;   
+    align-items: center;
+    margin-top: 80px;
+    /* justify-items: center; */
+    font-family:'poppins';
+    
+    
+}
+#name{
+    margin: 20px 20px 20px 20px;
+    /* padding: 10px; */
+    /* font-family:'poppins'; */
+    align-items: center;
+}
+#emailid{
+    margin: 20px 20px 20px 20px;
+    /* padding: 10px; */
+    /* font-family:'poppins'; */
+    align-items: center;
+}
+.password{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container input:hover{
+    border: 3px solid black;
+}
+#pass{
+    margin: 15px ;
+    /* font-family:'poppins'; */
+    align-items: center;
+    /* padding: 10px; */    
+}
+#btn{
+    position: sticky;
+    background-position: center;
+    padding: 5px;
+    padding-left: 10px;
+    background-attachment: center;;
+    padding-right: 10px;
+    margin-left: 135px;
+    margin-top: 40px;
+    font-family:'poppins';
+    border-radius: 40px;
+    border: 2px solid black;
+    font-size: 15px;
+
+}
+h1{
+    text-align: center;
+    margin: 20px;
+    font-family:'poppins';
+    margin-top: 100px;
+}
+#btn:hover{
+    cursor: pointer;
+    background-color: rgb(223, 170, 102);
+    border: 1px solid rgb(231, 150, 45);
+}
