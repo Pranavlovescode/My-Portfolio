@@ -26,13 +26,6 @@ body {
   color: red;
   font-size: 20px;
 }
-.navbars li a:hover {
-  font-weight: bolder;
-  color: #ff1f66;
-  background-color: #ffadc7;
-  border-radius: 20px;
-  
-}
 
 /* .container {
     background-color: black;
@@ -251,7 +244,7 @@ body {
   cursor: pointer;
 }
 #color-name {
-  color: #ff1f66;
+  color: rgb(252, 153, 252);
   margin-left: 15px;
 }
 .name {
@@ -405,7 +398,7 @@ body {
 
 .navbars li a {
   text-decoration: none;
-  padding: 20px;
+  margin: 20px;
   color: black;
 }
 
@@ -453,7 +446,7 @@ body {
   white-space: pre-line;
   overflow: hidden;
   border-right: 2px solid #ffffff;
-  color: #ff1f66;
+  color: rgb(252, 153, 252);;
 }
 #typerwriter-animation {
   font-size: 24px;

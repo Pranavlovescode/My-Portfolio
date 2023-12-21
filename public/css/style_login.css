@@ -17,11 +17,12 @@ body{
     
     
 }
-#emailid{
-    margin: 20px 20px 20px 20px;
-    /* padding: 10px; */
-    /* font-family:'poppins'; */
+#emailid{    
+    margin: 15px;    
     align-items: center;
+}
+#email{
+    margin: 20px;
 }
 .password{
     display: flex;

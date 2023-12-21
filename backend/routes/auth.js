@@ -38,7 +38,7 @@ router.post("/api", async (req, res) => {
     const data = await Login.findOne({ email });
     if (!data || data.pass !== pass) {
       // res.status(404).sendFile("C:\\Users\\prana\\Desktop\\Portfolio\\pranav-portfolio\\public\\failed-login.html");
-      
+
       console.log(
         "Attempted email and password\nemail : ",
         email,
@@ -50,7 +50,7 @@ router.post("/api", async (req, res) => {
       console.log(data);
       res.sendFile(
         "C:\\Users\\prana\\Desktop\\Portfolio\\pranav-portfolio\\public\\login-respond.html"
-      );
+      );      
     
     }
   } catch (e) {
