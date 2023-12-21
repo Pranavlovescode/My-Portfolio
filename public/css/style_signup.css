@@ -4,7 +4,7 @@
     
 }
 body{
-
+    font-family:'poppins';
     background-color: rgb(252, 223, 185);
 }
 .container{
@@ -24,8 +24,8 @@ body{
     /* font-family:'poppins'; */
     align-items: center;
 }
-#emailid{
-    margin: 20px 20px 20px 20px;
+#email{
+    margin: 20px;
     /* padding: 10px; */
     /* font-family:'poppins'; */
     align-items: center;

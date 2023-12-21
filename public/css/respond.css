@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'poppins';
+    text-align: center;
+}
+p{
+    color: green;
+    padding: 30px;
+}
+h1{
+    padding: 50px;
+}

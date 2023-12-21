@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Page</title>
+    <link rel="stylesheet" href="/css/style_signup.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    </style>
+    <script src="/js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Signup Page of Pranav's portfolio</h1>
+        <form action="/api/auth" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+            <label for="email">Email ID</label>
+            <input type="text" id="email" name="email" required>
+            <br>
+            <div class="password">
+                <label for="pass">Password</label>
+                <input type="password" name="pass" id="pass" required>
+            </div>
+            <button id="btn" type="submit">Signup</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css" class="css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="/css/style.css">
     <link rel="shortcut icon" href="img/pt_logo.jpg" type="image/x-icon">
     <script src="https://kit.fontawesome.com/8e32604c34.js" crossorigin="anonymous"></script>
     <style>
@@ -31,6 +32,7 @@
         display: block;
     }
 </style> -->
+    <script src="../backend/server.js"></script>
     <script src="/js/script.js"></script>
     <title>Pranav Titambe</title>
 </head>
@@ -42,7 +44,7 @@
             <span class="left">
                 <i onclick="toggleHide()" id="menu-bar" class="fa-solid fa-bars"></i>
                 
-                <img src="/img/pt_logo.jpg" alt="">
+                <img src="img/pt_logo.jpg" alt="">
                 <!-- <p id="name"> Pranav Titambe</p> -->
             </span>
             <div class="mid" id="mid">
@@ -64,16 +66,21 @@
             </div>
             <div class="right">
                 <span class="login">
-                    <button id="login" onclick="redirect()">Login</button>
+                    <form action="/login-page" method="GET">
+                        <button type="submit" id="login" >Login</button>
+                    </form>                     
                 </span>
                 <span class="signup" id="signup">
-                    <button id="signup" onclick="redirect1()">Sign Up</button>
+                    <form action="/signup-page" method="POST">
+                        <button type="submit" id="signup">Sign Up</button>
+                    </form>
                 </span>
             </div>
         </div>
     </nav>
     <!-- body of portfolio -->
     <section class="main">
+        
         <div class="background">
 
             <h1 class="name">
@@ -106,7 +113,7 @@
                 <div class="info">
                     <div class="skill-title">
                         <div class="logo">
-                            <img src="/img/926px-C_Programming_Language.svg.png" alt="" class="skill-icon">
+                            <img src="img/926px-C_Programming_Language.svg.png" alt="" class="skill-icon">
                         </div>
                         <h3>C</h3>
                     </div>

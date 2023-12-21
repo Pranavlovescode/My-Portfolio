@@ -1,10 +1,7 @@
 
 console.log("Hello World");
 
-redirect = () => {
-  window.location.href = "login.html";
-  console.log("working");
-};
+
 function redirect1() {
   window.location.href = "signup.html";
   console.log("signup is also working");
@@ -57,15 +54,21 @@ document.addEventListener('DOMContentLoaded', function () {
 function toggleHide(){
   let mid = document.getElementById('mid')
   let menu = document.getElementById('menu-bar')
-  if (mid.style.display==='none') {
-    mid.style.display='flex'     
-    menu.innerHTML = '<i class="fa-solid fa-xmark"></i>'
-
+  if (mid.style.display==='flex') {
+    mid.style.display='none'     
+    menu.innerHTML='<i class="fa-solid fa-bars"></i>'
+    
   }
   else{
-    mid.style.display = 'none'
+    mid.style.display = 'flex'
+    menu.innerHTML = '<i class="fa-solid fa-xmark"></i>'
     // closeMenuMenu()
-    menu.innerHTML='<i class="fa-solid fa-bars"></i>'
   }
 }
 
+function handleLogin() {
+
+  window.location.href='login.html'
+  console.log('going to login page')
+}
+ 
